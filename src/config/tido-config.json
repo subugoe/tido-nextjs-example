@@ -1,0 +1,136 @@
+{
+  "colors": {
+    "forceMode": "light",
+    "primary": "#46be54"
+  },
+  "container": "#app",
+  "header": {
+    "show": true,
+    "navigation": true,
+    "panelsToggle": true,
+    "languageSwitch": false
+  },
+  "lang": "de",
+  "panels": [
+    {
+      "label": "Tree &amp; Metadata",
+      "width": 1,
+      "views": [
+        {
+          "id": "view-1",
+          "label": "Tree",
+          "default": false,
+          "connector": {
+            "id": 1
+          }
+        },
+        {
+          "id": "view-2",
+          "label": "Metadata",
+          "default": false,
+          "connector": {
+            "id": 2,
+            "options": {
+              "documentsOrder": [
+                "item",
+                "manifest"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "Image",
+      "width": 1.5,
+      "views": [
+        {
+          "id": "view-1",
+          "label": "Image",
+          "default": false,
+          "connector": {
+            "id": 3
+          }
+        }
+      ]
+    },
+    {
+      "label": "Text",
+      "width": 1,
+      "views": [
+        {
+          "id": "view-1",
+          "label": "Transcription",
+          "default": false,
+          "connector": {
+            "id": 4,
+            "options": {
+              "type": "transcription"
+            }
+          }
+        },
+        {
+          "id": "view-2",
+          "label": "Translation",
+          "default": false,
+          "connector": {
+            "id": 4,
+            "options": {
+              "type": "translation"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "label": "Annotations",
+      "width": 1,
+      "views": [
+        {
+          "id": "view-1",
+          "label": "Motif",
+          "default": false,
+          "connector": {
+            "id": 5,
+            "options": {
+              "types": [
+                {
+                  "name": "Person",
+                  "icon": "person",
+                  "annotationType": "annotation"
+                },
+                {
+                  "name": "Place",
+                  "icon": "marker"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "view-2",
+          "label": "Variants",
+          "default": false,
+          "connector": {
+            "id": 6
+          }
+        },
+        {
+          "id": "view-3",
+          "label": "View 3",
+          "default": false,
+          "connector": {}
+        }
+      ]
+    }
+  ],
+  "collection": "https://api.ahiqar.sub.uni-goettingen.de/textapi/ahiqar/arabic-karshuni/collection.json",
+  "translations": {
+    "de": {
+      "manifest": "Manuskript",
+      "item": "Seite",
+      "next_item": "Nächste Seite",
+      "prev_item": "Vorherige Seite"
+    }
+  }
+}
