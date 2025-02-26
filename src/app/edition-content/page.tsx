@@ -8,13 +8,19 @@ import "tido/dist/tido.css";
 
 import * as config from "@/config/tido-config.json";
 
+declare global {
+  interface Window {
+    Tido: (config: any) => never
+  }
+}
+
 const EditionContent: FC = () => {
   const { theme } = useTheme();
   const [tido, setTido] = useState(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const newTido = new window.Tido(config);
+      const newTido = window.Tido(config);
       setTido(newTido);
     }
   }, []);
