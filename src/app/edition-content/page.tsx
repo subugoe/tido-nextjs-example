@@ -3,9 +3,10 @@
 import { FC, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
-import * as config from "@/config/tido-config.json";
 import "tido/dist/tido.js";
 import "tido/dist/tido.css";
+
+import * as config from "@/config/tido-config.json";
 
 const EditionContent: FC = () => {
   const { theme } = useTheme();
@@ -26,7 +27,7 @@ const EditionContent: FC = () => {
   }, [theme, tido]);
 
   return (
-    <div className="flex flex-col">
+    <div className="h-full flex flex-col">
       <div className="flex-1 overflow-hidden">
         <div id="app" className="size-full"></div>
       </div>

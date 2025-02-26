@@ -1,7 +1,7 @@
 {
   "colors": {
     "forceMode": "light",
-    "primary": "#46be54"
+    "primary": "#39b151"
   },
   "container": "#app",
   "header": {
@@ -10,10 +10,10 @@
     "panelsToggle": true,
     "languageSwitch": false
   },
-  "lang": "de",
+  "lang": "en",
   "panels": [
     {
-      "label": "Tree &amp; Metadata",
+      "label": "Tree and Metadata",
       "width": 1,
       "views": [
         {
@@ -26,14 +26,14 @@
         },
         {
           "id": "view-2",
-          "label": "Metadata",
+          "label": "Matadata",
           "default": false,
           "connector": {
             "id": 2,
             "options": {
               "documentsOrder": [
-                "item",
-                "manifest"
+                "manifest",
+                "item"
               ]
             }
           }
@@ -41,8 +41,8 @@
       ]
     },
     {
-      "label": "Image",
-      "width": 1.5,
+      "label": "Panel 2",
+      "width": 1,
       "views": [
         {
           "id": "view-1",
@@ -88,7 +88,7 @@
       "views": [
         {
           "id": "view-1",
-          "label": "Motif",
+          "label": "Editorial",
           "default": false,
           "connector": {
             "id": 5,
@@ -96,12 +96,7 @@
               "types": [
                 {
                   "name": "Person",
-                  "icon": "person",
-                  "annotationType": "annotation"
-                },
-                {
-                  "name": "Place",
-                  "icon": "marker"
+                  "icon": "person"
                 }
               ]
             }
@@ -114,23 +109,9 @@
           "connector": {
             "id": 6
           }
-        },
-        {
-          "id": "view-3",
-          "label": "View 3",
-          "default": false,
-          "connector": {}
         }
       ]
     }
   ],
-  "collection": "https://api.ahiqar.sub.uni-goettingen.de/textapi/ahiqar/arabic-karshuni/collection.json",
-  "translations": {
-    "de": {
-      "manifest": "Manuskript",
-      "item": "Seite",
-      "next_item": "Nächste Seite",
-      "prev_item": "Vorherige Seite"
-    }
-  }
+  "collection": "https://api.dev.ahiqar.sub.uni-goettingen.de/textapi/ahiqar/arabic-karshuni/collection.json"
 }

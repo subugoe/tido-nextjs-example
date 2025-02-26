@@ -36,7 +36,7 @@ const useMenuItems = (): MenuItems => {
     () => ({
       edition: {
         label: "Text Edition",
-        items: [{ label: "Inhaltsverzeichnis", href: "/edition-content" }],
+        href: "/edition-content",
       },
       materials: {
         label: "Materialien",
@@ -76,7 +76,7 @@ const NavbarLink = ({ item }: { item: MenuItem }) => {
 
   if (item.href) {
     return (
-      <Link className="text-lg text-zinc-900 dark:text-white" href={item.href}>
+      <Link className="text-lg text-zinc-900 dark:text-white shrink-0" href={item.href}>
         {item.label}
       </Link>
     );
@@ -101,7 +101,7 @@ const NavbarLink = ({ item }: { item: MenuItem }) => {
           {item.items.map((subItem) => (
             <DropdownItem key={subItem.label} textValue={subItem.label}>
               <Link
-                className="text-zinc-900 dark:text-white"
+                className="text-zinc-900 dark:text-white shrink-0"
                 href={subItem.href ?? "/"}
               >
                 {subItem.label}
